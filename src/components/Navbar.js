@@ -2,9 +2,9 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 
 function MyNavbar() {
   return (
-    <div className='mynavbar'>
+    <div className='sticky-top'>
       <Container fluid>
-        <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="md" variant="dark" bg='dark'>
           <Container>
             <Navbar.Brand href="#home" className='fw-bold fs-5'>
               Dua Putri Jogja
