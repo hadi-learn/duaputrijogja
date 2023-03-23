@@ -1,10 +1,10 @@
 import React from 'react'
 import { Carousel, Container } from 'react-bootstrap'
-import image1 from '../assets/images/1.png'
-import image2 from '../assets/images/2.png'
-import image3 from '../assets/images/3.png'
-import image4 from '../assets/images/4.png'
-import image5 from '../assets/images/5.png'
+import image1 from '../assets/images/hero/1.png'
+import image2 from '../assets/images/hero/2.png'
+import image3 from '../assets/images/hero/3.png'
+import image4 from '../assets/images/hero/4.png'
+import image5 from '../assets/images/hero/5.png'
 
 const Hero = () => {
 
