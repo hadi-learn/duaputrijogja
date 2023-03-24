@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap'
 
 const Cta = () => {
   const phoneNumber = '+6281908198060'; // replace with the recipient's phone number
-  const message = 'Hello!'; // replace with the message you want to send
+  const message = 'Hello Dua Putri Jogja'; // replace with the message you want to send
   
   const handleWhatsAppClick = (e) => {
     e.preventDefault();
