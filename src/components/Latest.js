@@ -21,8 +21,8 @@ const Latest = () => {
         {/* <SVG4 /> */}
       </div>
       <Container fluid>
-          <h3>Mie Organik</h3>
-          <p>Tanpa MSG, Tanpa Pengawet</p>
+          <h3>Produk Terbaru</h3>
+          <p>Berbagai macam produk sehat dan higienis</p>
           <Row className='row-cols-lg-3'>
             <Col>
               <img 
