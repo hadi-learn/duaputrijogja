@@ -1,15 +1,13 @@
 import React from 'react'
 import { Container, Row, Col, Image } from 'react-bootstrap'
-import image1 from '../assets/images/organik tanpa msg - Bubur Beras Organik-Salmon Wortel.jpeg'
-import image2 from '../assets/images/hero/2.png'
-import image3 from '../assets/images/hero/3.png'
-import image4 from '../assets/images/hero/4.png'
-import image5 from '../assets/images/hero/5.png'
-import image6 from '../assets/images/hero/1.png'
+import image1 from '../assets/images/gallery/1280x720/6.png'
+import image2 from '../assets/images/gallery/1280x720/2.png'
+import image3 from '../assets/images/gallery/1280x720/3.png'
+import image4 from '../assets/images/gallery/1280x720/4.png'
+import image5 from '../assets/images/gallery/1280x720/5.png'
+import image6 from '../assets/images/gallery/1280x720/1.png'
 import { ReactComponent as SVG1 } from '../assets/images/background/01. Blob Filled (1).svg'
 import { ReactComponent as SVG2 } from '../assets/images/background/02. Blob Filled (2).svg'
-import { ReactComponent as SVG3 } from '../assets/images/background/15. Abstract Shape 2.svg'
-import { ReactComponent as SVG4 } from '../assets/images/background/16. Abstract Shape 3.svg'
 
 const Latest = () => {
   return (
@@ -27,7 +25,7 @@ const Latest = () => {
           <Col sm={12} md={6} lg={4}>
           <div className='single-product'>
             <div className="image-container">
-              <Image src={image2} fluid style={{ width: '100%', height: '100%' }}/>
+              <Image src={image2} fluid style={{ width: '100%', height: 'auto' }}/>
               <div className="image-title">
                 <h5>Beras organik</h5>
               </div>
@@ -70,6 +68,16 @@ const Latest = () => {
               <Image src={image6} fluid style={{ width: '100%', height: '100%' }}/>
               <div className="image-title">
                 <h5>Bumbu Instan Rempah</h5>
+              </div>
+            </div>
+          </div>
+          </Col>
+          <Col sm={12} md={6} lg={4}>
+          <div className='single-product'>
+            <div className="image-container">
+              <Image src={image1} fluid style={{ width: '100%', height: '100%' }}/>
+              <div className="image-title">
+                <h5>Bubur Organik</h5>
               </div>
             </div>
           </div>

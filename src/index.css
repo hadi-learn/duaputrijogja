@@ -30,6 +30,10 @@ body {
   padding-bottom: 50px;
 }
 
+.check {
+  border: 2px solid #000;
+}
+
 .svg-wrapper {
   position: absolute;
   top: 0;
@@ -57,22 +61,13 @@ body {
   opacity: 0.5;
 }
 
-.latest h {
+.latest h2 {
   font-family: Montserrat;
-}
-
-.single-product {
-  float: left;
-  height: 320px;
-  line-height: 260px;
-  margin: 1%;
-  text-align: center;
 }
 
 .image-container {
   background: #fff none repeat scroll 0 0;
   position: relative;
-  /* line-height: 248px; */
   margin-bottom: 30px;
   overflow: hidden;
 }

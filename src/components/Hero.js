@@ -1,10 +1,11 @@
 import React from 'react'
 import { Carousel, Container } from 'react-bootstrap'
-import image1 from '../assets/images/hero/1.png'
-import image2 from '../assets/images/hero/2.png'
-import image3 from '../assets/images/hero/3.png'
-import image4 from '../assets/images/hero/4.png'
-import image5 from '../assets/images/hero/5.png'
+import image1 from '../assets/images/hero/1280x720/1.png'
+import image2 from '../assets/images/hero/1280x720/2.png'
+import image3 from '../assets/images/hero/1280x720/3.png'
+import image4 from '../assets/images/hero/1280x720/4.png'
+import image5 from '../assets/images/hero/1280x720/5.png'
+import image6 from '../assets/images/hero/1280x720/6.png'
 
 const Hero = () => {
 
@@ -39,6 +40,12 @@ const Hero = () => {
       heading: 'Kaldu Ayam',
       subheading: 'Diproses dari ayam asli tanpa MSG dan bahan pengawet'
     },
+    {
+      src: image6,
+      alt: 'organik tanpa msg - Bubur Organik',
+      heading: 'Bubur Organik',
+      subheading: '100% tanpa bahan pengawet'
+    }
   ]
   
   return (
