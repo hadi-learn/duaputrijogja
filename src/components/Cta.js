@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 const Cta = () => {
   const phoneNumber = [
@@ -18,14 +18,26 @@ const Cta = () => {
   }
 
   return (
-    <>
-    <Button href="#" onClick={handleWhatsAppClick1}>
-      CS1-081804095747
-    </Button>
-    <Button href="#" onClick={handleWhatsAppClick2}>
-      CS2-08175453045
-    </Button>
-    </>
+    <section className='cta'>
+    <Container>
+      <Row className='mb-4'>
+        <Col className='text-center'>
+          <h2 className='fw-bold'>Hubungi Kami</h2>
+          <p>Untuk informasi lebih lanjut silakan hubungi CS kami</p>
+        </Col>
+      </Row>
+      <Row className='row-cols-md-2 row-cols-1'>
+        <Col className='text-center'>
+          <i onClick={handleWhatsAppClick1} class="fa-brands fa-whatsapp wa-button"></i>
+          <p>CS1-081804095747</p>
+        </Col>
+        <Col className='text-center'>
+          <i onClick={handleWhatsAppClick2} class="fa-brands fa-whatsapp wa-button"></i>
+          <p>CS2-08175453045</p>
+        </Col>
+      </Row>
+    </Container>
+    </section>
   );
 }
 

@@ -19,8 +19,12 @@ const Latest = () => {
         {/* <SVG4 /> */}
       </div>
       <Container fluid>
-        <h2>Produk Terbaru</h2>
-        <p>Berbagai macam produk sehat dan higienis</p>
+        <Row>
+          <Col className='mb-5 text-center'>
+            <h2 className='fw-bold'>Produk Terbaru</h2>
+            <p>Berbagai macam produk sehat dan higienis</p>
+          </Col>
+        </Row>
         <Row className='row-cols-lg-3'>
           <Col sm={12} md={6} lg={4}>
           <div className='single-product'>

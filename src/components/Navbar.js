@@ -11,7 +11,7 @@ function MyNavbar() {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="ms-auto">
+              <Nav className="ms-auto text-center">
                 <Nav.Link href="#features">Features</Nav.Link>
                 <Nav.Link href="#pricing">Harga</Nav.Link>
                 <NavDropdown title="Produk" id="collasible-nav-dropdown">
@@ -25,8 +25,6 @@ function MyNavbar() {
                     Produk Lainnya
                   </NavDropdown.Item>
                 </NavDropdown>
-              </Nav>
-              <Nav>
                 <Nav.Link href="#deets">Hubungi Kami</Nav.Link>
               </Nav>
             </Navbar.Collapse>

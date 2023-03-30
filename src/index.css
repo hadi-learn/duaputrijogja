@@ -93,10 +93,29 @@ body {
 }
 
 .image-container:hover .image-title {
-  bottom: -0;
+  bottom: 0;
 }
 
+.cta {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 
+.marketing {
+  width: 70%;
+}
+
+.wa-button {
+  cursor: pointer;
+  font-size: 2em;
+  color: green;
+}
+
+.feature {
+  min-height: 500px;
+}
 
 
 
