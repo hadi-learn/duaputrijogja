@@ -1,4 +1,5 @@
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import products from '../products/products';
 
 function MyNavbar() {
   return (
@@ -15,11 +16,9 @@ function MyNavbar() {
                 <Nav.Link href="#features">Features</Nav.Link>
                 <Nav.Link href="#pricing">Harga</Nav.Link>
                 <NavDropdown title="Produk" id="collasible-nav-dropdown">
-                  <NavDropdown.Item href="#product/3.1">Mie Organik 1</NavDropdown.Item>
-                  <NavDropdown.Item href="#product/3.2">
-                    Mie Organik 2
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#product/3.3">Mie Organik 3</NavDropdown.Item>
+                  {products.map(product => (
+                    <NavDropdown.Item href={`#product/${product.id}`}>{product.heading}</NavDropdown.Item>
+                  ))}
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#product/3.4">
                     Produk Lainnya

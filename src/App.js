@@ -12,8 +12,8 @@ function App() {
       <Hero />
       <Navbar />
       <Latest />
-      <Cta />
       <Features />
+      <Cta />
       <Products />
       <Footer />
     </div>
