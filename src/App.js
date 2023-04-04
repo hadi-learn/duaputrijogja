@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Latest from './components/Latest'
 import Cta from './components/Cta'
 import Features from './components/Features'
-import Products from './components/Products'
+// import Products from './components/Products'
 import Footer from './components/Footer'
 
 function App() {
@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       <Hero />
       <Navbar />
-      <Latest />
       <Features />
+      <Latest />
       <Cta />
-      <Products />
+      {/* <Products /> */}
       <Footer />
     </div>
   )

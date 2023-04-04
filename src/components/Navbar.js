@@ -5,7 +5,7 @@ function MyNavbar() {
   return (
     <div className='sticky-top'>
       <Container fluid>
-        <Navbar collapseOnSelect expand="md" variant="dark" bg='dark'>
+        <Navbar collapseOnSelect expand="md" variant="dark">
           <Container>
             <Navbar.Brand href="#home" className='fw-bold fs-5'>
               Dua Putri Jogja
@@ -13,8 +13,9 @@ function MyNavbar() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ms-auto text-center">
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Harga</Nav.Link>
+                <Nav.Link href="#layanan">Layanan</Nav.Link>
+                <Nav.Link href="#produkterbaru">Produk Terbaru</Nav.Link>
+                <Nav.Link href="#hubungikami">Hubungi Kami</Nav.Link>
                 <NavDropdown title="Produk" id="collasible-nav-dropdown">
                   {products.map(product => (
                     <NavDropdown.Item href={`#product/${product.id}`}>{product.heading}</NavDropdown.Item>
@@ -24,7 +25,6 @@ function MyNavbar() {
                     Produk Lainnya
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#deets">Hubungi Kami</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

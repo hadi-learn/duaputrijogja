@@ -3,11 +3,11 @@ import { Container, Col, Row } from 'react-bootstrap'
 
 const Features = () => {
   return (
-    <section className='feature d-flex align-items-center mt-5'>
+    <section className='feature d-flex align-items-center'>
       <Container fluid>
         <Row className='mb-3'>
           <Col className='text-center pt-3'>
-            <h2 className='fw-bold'>Services</h2>
+            <h2 className='fw-bold'>Layanan Kami</h2>
             <p>Transaksi mudah dengan harga yang kompetitif</p>
           </Col>
         </Row>

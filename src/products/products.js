@@ -9,6 +9,7 @@ const products = [
   {
     id: 1,
     srcHero: image1,
+    srcLatest: image1,
     alt: 'organik tanpa msg - Tepung Bumbu Qreezpy',
     heading: 'Tepung Bumbu Serbaguna',
     subheading: 'Tanpa MSG dan tanpa bahan pengawet'
@@ -16,6 +17,7 @@ const products = [
   {
     id: 2,
     srcHero: image2,
+    srcLatest: image2,
     alt: 'organik tanpa msg - Kaldu Ayam',
     heading: 'Kaldu Ayam',
     subheading: 'Diproses dari ayam asli tanpa MSG dan bahan pengawet'
@@ -23,6 +25,7 @@ const products = [
   {
     id: 3,
     srcHero: image3,
+    srcLatest: image3,
     alt: 'organik tanpa msg - Bumbu Instan Rempah -Abon',
     heading: 'Bumbu Instan Rempah',
     subheading: 'Dengan bahan alami dan tanpa pengawet'
@@ -30,6 +33,7 @@ const products = [
   {
     id: 4,
     srcHero: image4,
+    srcLatest: image4,
     alt: 'organik tanpa msg - Abon 100% Daging Asli',
     heading: 'Abon 100% Daging Asli',
     subheading: 'Terbuat dari daging asli tanpa MSG dan bahan pengawet'
@@ -37,6 +41,7 @@ const products = [
   {
     id: 5,
     srcHero: image5,
+    srcLatest: image5,
     alt: 'organik tanpa msg - Beras Organik',
     heading: 'Beras Organik',
     subheading: 'Alami dan sehat, tidak menggunakan pestisida'
@@ -44,6 +49,7 @@ const products = [
   {
     id: 6,
     srcHero: image6,
+    srcLatest: image6,
     alt: 'organik tanpa msg - Bubur Organik',
     heading: 'Bubur Organik',
     subheading: '100% tanpa bahan pengawet'

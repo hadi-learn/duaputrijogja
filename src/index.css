@@ -1,16 +1,19 @@
 body {
-  font-family: Montserrat;
+  margin: 0;
+  font-family: PT Serif;
 }
 
-.hero h3 {
-  font-family: Montserrat;
+.carousel-caption h3 {
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 3rem;
+  text-shadow: 2px 2px rgba(0, 0, 0, 1);
 }
 
-.hero p {
-  font-family: PT Serif;
+.carousel-caption p {
+  font-family: "PT Serif";
   font-size: 1.4rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 1);
 }
 
 .hero img {
@@ -18,40 +21,48 @@ body {
 }
 
 .carousel-indicators .active {
-  background-color: rgba(255, 67, 1, 0.8);
+  background-color: #333333;
   width: 60px;
   height: 5px;
   border-radius: 50%;
 }
 
 .carousel-control-prev-icon{
-  background-color: rgba(255, 67, 1, 0.8);
+  background-color: #333333;
   height: 100px;
   border-radius: 50% 0 0 50%;
 }
 
 .carousel-control-next-icon {
-  background-color: rgba(255, 67, 1, 0.8);
+  background-color: #333333;
   height: 100px;
   border-radius: 0 50% 50% 0;
 }
 
 .navbar {
+  background-color: #333333;
   padding: 10px 0;
 }
 
+.navbar-brand {
+  font-family: 'Montserrat';
+}
+
 .latest {
+  /* position: relative; */
+  background-color: #333333;
+  color: white;
   text-align: center;
-  position: relative;
-  width: 100%;
-  height: 100%;
+  padding: 30px 0;
 }
 
 .check {
   border: 2px solid #000;
 }
 
-.svg-wrapper {
+/* SVG ELEMENT IF AVAILABLE */
+
+/* .svg-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -76,16 +87,24 @@ body {
   width: 40%;
   height: 40%;
   opacity: 0.5;
+} */
+
+.latest .new-product-title {
+  margin-bottom: 20px;
+  padding: 30px 0 10px;
 }
 
 .latest h2 {
-  font-family: Montserrat;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 15px;
+  background: url(assets/images/background/project-title.png) no-repeat center center;
 }
 
 .image-container {
   background: #fff none repeat scroll 0 0;
   position: relative;
   margin-bottom: 30px;
+  border-radius: 12px;
   overflow: hidden;
 }
 
@@ -118,50 +137,96 @@ body {
   bottom: 0;
 }
 
-.marketing {
-  width: 70%;
+.feature {
+  min-height: 500px;
+  padding: 30px 0 20px;
+}
+
+.feature h2 {
+  font-family: 'Roboto', sans-serif;
+  background: url(assets/images/background/our-app-bg.png) no-repeat center center;
+  margin-bottom: 15px;
+}
+
+.feature h5 {
+  font-family: 'Montserrat';
+}
+
+.cta {
+  margin-top: 20px;
+  padding: 30px 0 20px;
+}
+
+.cta h2 {
+  font-family: 'Roboto', sans-serif;
+  background: url(assets/images/background/our-app-bg.png) no-repeat center center;
+  margin-bottom: 15px;
+}
+
+.cs-container {
+  margin: 5px;
+  background-color: rgb(132, 250, 132);
+  border-radius: 10px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .wa-button {
-  cursor: pointer;
-  font-size: 2em;
+  font-size: 3em;
   color: rgb(8, 192, 8);
-  padding: 15px;
-  border: 2px solid rgb(131, 131, 131);
-  border-radius: 10%;
+  padding: 10px 0;
 }
 
-.feature {
-  min-height: 500px;
+.footer-social-icons {
+  list-style: none;
+  padding-left: 0;
 }
 
+.footer-social-icons li {
+  display: inline-block;
+  margin-right: 1rem;
+}
 
+.footer-social-icons a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
 
+.footer-social-icons a:hover {
+  color: #ccc;
+}
+
+.footer-social-icons svg {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
 
 
 @media (max-width: 992px) {
-  .hero h3 {
+  .carousel-caption h3 {
     font-size: 2.5rem;
   }
-  .hero p {
+  .carousel-caption p {
     font-size: 1.2rem;
   }
 }
 
 @media (max-width: 768px) {
-  .hero h3 {
+  .carousel-caption h3 {
     font-size: 2rem;
   }
-  .hero p {
+  .carousel-caption p {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 576px) {
-  .hero h3 {
+  .carousel-caption h3 {
     font-size: 1.5rem;
   }
-  .hero p {
+  .carousel-caption p {
     font-size: 0.8rem;
   }
 }
