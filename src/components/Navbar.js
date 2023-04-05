@@ -8,7 +8,7 @@ function MyNavbar() {
       <Container fluid>
         <Navbar collapseOnSelect expand="md" variant="dark">
           <Container>
-            <Navbar.Brand href="#home" className='fw-bold fs-5'>
+            <Navbar.Brand href="#home">
               <span><img height='30px' width='30px' src={logo} alt='dua putri jogja-logo'></img></span>Dua Putri Jogja
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

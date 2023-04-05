@@ -45,12 +45,47 @@ body {
 }
 
 .navbar-brand {
-  font-family: 'Montserrat';
+  font-family: 'Kalam', cursive;
+  font-weight: 700;
+  font-size: 1.3em !important;
 }
 
 .navbar-brand img {
   border-radius: 50%;
   margin-right: 5px;
+}
+
+.about {
+  margin: 20px 0 30px;
+}
+
+.about h2 {
+  font-family: 'Kalam', cursive;
+  background: url(assets/images/background/our-app-bg.png) no-repeat center center;
+  margin-bottom: 15px;
+}
+
+.about h4 {
+  font-family: Montserrat;
+}
+
+.about-collage-image {
+  margin-left: 5%;
+}
+
+.about-collage-info {
+  text-align: right;
+  margin-right: 5%;
+  padding-top: 5%;
+}
+
+.about-collage-info h3 {
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 10px;
+}
+
+.about-collage-info h5 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .latest {
@@ -59,10 +94,6 @@ body {
   color: whitesmoke;
   text-align: center;
   padding: 30px 0;
-}
-
-.check {
-  border: 2px solid #000;
 }
 
 /* SVG ELEMENT IF AVAILABLE */
@@ -126,7 +157,7 @@ body {
 }
 
 .latest .image-title h5 {
-  background: rgb(255, 29, 29);
+  background: #fc3636;
   color: #fff;
   line-height: 35px;
   padding: 8px 40px;
@@ -140,22 +171,6 @@ body {
 
 .latest .image-container:hover .image-title {
   bottom: 0;
-}
-
-.about h2 {
-  font-family: 'Kalam', cursive;
-  background: url(assets/images/background/our-app-bg.png) no-repeat center center;
-  margin-bottom: 15px;
-}
-
-.about-collage-image {
-  margin-left: 5%;
-}
-
-.about-collage-info {
-  text-align: right;
-  margin-right: 5%;
-  padding-top: 5%;
 }
 
 .feature {
@@ -201,17 +216,53 @@ body {
 }
 
 .cs-container {
+  position: relative;
   margin: 5px;
-  background-color: rgb(132, 250, 132);
+  background-color: #333333;
   border-radius: 10px;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  overflow: hidden;
+  color: whitesmoke;
+  transition: 10ms ease-in-out 0.19s;
 }
 
-.wa-button {
+.cs-container:hover {
+  color: #000;
+}
+
+.cs-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  transition:0.2s ease-out;  
+  background-color: rgb(132, 250, 132);
+}
+
+.cs-container:hover::before {
+  top: 0;
+}
+
+.cs-container .wa-button {
+  position: relative;
   font-size: 3em;
   color: rgb(8, 192, 8);
   padding: 10px 0;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.cs-container p {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.cs-container span {
+  font-family: cursive;
 }
 
 .footer-social-icons {
@@ -257,6 +308,12 @@ body {
   .carousel-caption p {
     font-size: 1rem;
   }
+  .about-collage-image {
+    margin-left: 0;
+  }
+  .about-collage-info {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -265,6 +322,12 @@ body {
   }
   .carousel-caption p {
     font-size: 0.8rem;
+  }
+  .about-collage-image {
+    margin-left: 0;
+  }
+  .about-collage-info {
+    margin-right: 0;
   }
 }
 
