@@ -30,11 +30,11 @@ const Cta = () => {
         <Col></Col>
         <Col onClick={handleWhatsAppClick1} className='cs-container text-center'>
           <i class="fa-brands fa-whatsapp wa-button"></i>
-          <p>CS1-081804095747</p>
+          <p>Arifin-081804095747</p>
         </Col>
         <Col onClick={handleWhatsAppClick2} className='cs-container text-center'>
           <i class="fa-brands fa-whatsapp wa-button"></i>
-          <p>CS2-08175453045</p>
+          <p>Tyas-08175453045</p>
         </Col>
         <Col></Col>
       </Row>

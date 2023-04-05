@@ -1,5 +1,8 @@
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
+import transport from '../assets/images/background/23-transport.svg'
+import support from '../assets/images/background/26-support.svg'
+import payment from '../assets/images/background/9-payment.svg'
 
 const Features = () => {
   return (
@@ -13,17 +16,18 @@ const Features = () => {
         </Row>
         <Row className='row-cols-lg-3 row-cols-md-2 row-cols-1 justify-content-center'>
           <Col className='text-center py-3 px-2'>
-            <i class="fa-solid fa-rupiah-sign fs-3 mb-4"></i>
+            <img src={payment} alt='voucher-icon' className='icon'/>
             <h5 className='fw-bold'>Harga Terjangkau</h5>
             <p>Jaminan harga terbaik</p>
           </Col>
           <Col className='text-center py-3 px-2'>
-            <i class="fa-solid fa-truck-fast fs-3 mb-4"></i>
+            {/* <i class="fa-solid fa-truck-fast fs-3 mb-4"></i> */}
+            <img src={transport} alt='transport-icon' className='icon'/>
             <h5 className='fw-bold'>Pengiriman Cepat</h5>
             <p>Deal pemesanan langsung proses pengiriman</p>
           </Col>
           <Col className='text-center py-3 px-2'>
-            <i class="fa-solid fa-comments fs-3 mb-4"></i>
+            <img src={support} alt='support-icon' className='icon'/>
             <h5 className='fw-bold'>Layanan Pelanggan</h5>
             <p>Customer service kami siap melayani pertanyaan Anda</p>
           </Col>
