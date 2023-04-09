@@ -6,9 +6,9 @@ function Footer() {
       <Container>
         <Row>
           <Col xs={12} md={4} className='text-center'>
-            <h4>Company</h4>
+            <h4>Dua Putri Jogja</h4>
             <ul className="list-unstyled">
-              <li>About</li>
+              <li>Tentang</li>
               <li>Jobs</li>
               <li>Press</li>
             </ul>
