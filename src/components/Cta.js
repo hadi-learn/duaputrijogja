@@ -3,9 +3,12 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 const Cta = () => {
   const phoneNumber = [
-    process.env.REACT_APP_HP_ARIFIN,
-    process.env.REACT_APP_HP_TYAS,
-    process.env.REACT_APP_HP_HADI
+    // process.env.REACT_APP_HP_ARIFIN,
+    // process.env.REACT_APP_HP_TYAS,
+    // process.env.REACT_APP_HP_HADI,
+    '+6281804095747',
+    '+628175453045',
+    '+6281908198538'
   ]
   const message = 'Hallo Dua Putri Jogja' // replace with the message you want to send
   
