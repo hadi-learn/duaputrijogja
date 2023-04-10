@@ -9,7 +9,9 @@ const Products = () => {
         <Row>
           <Col className='text-center my-5'>
             <h2>Produk Kami</h2>
-            <video src={video1} controls>Produk Kami</video>
+            <div>
+              <video src={video1} controls>Produk Kami</video>
+            </div>
           </Col>
         </Row>
       </Container>

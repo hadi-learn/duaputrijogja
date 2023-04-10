@@ -14,22 +14,27 @@ const Features = () => {
             <p>Transaksi mudah dengan harga yang kompetitif</p>
           </Col>
         </Row>
-        <Row className='row-cols-lg-3 row-cols-md-2 row-cols-1 justify-content-center'>
-          <Col className='text-center py-3 px-2'>
-            <img src={payment} alt='voucher-icon' className='icon'/>
-            <h5 className='fw-bold'>Harga Terjangkau</h5>
-            <p>Jaminan harga terbaik</p>
+        <Row className='row-cols-lg-3 row-cols-md-2 row-cols-1 justify-content-center feature-row'>
+          <Col className='single-feature'>
+            <div className='single-feature-container'>              
+              <img src={payment} alt='voucher-icon' className='icon'/>
+              <h5 className='fw-bold'>Harga Terjangkau</h5>
+              <p>Jaminan harga terbaik</p>
+            </div>
           </Col>
-          <Col className='text-center py-3 px-2'>
-            {/* <i class="fa-solid fa-truck-fast fs-3 mb-4"></i> */}
-            <img src={transport} alt='transport-icon' className='icon'/>
-            <h5 className='fw-bold'>Pengiriman Cepat</h5>
-            <p>Deal pemesanan langsung proses pengiriman</p>
+          <Col className='single-feature'>
+            <div className='single-feature-container'>
+              <img src={transport} alt='transport-icon' className='icon'/>
+              <h5 className='fw-bold'>Pengiriman Cepat</h5>
+              <p>Deal pemesanan langsung proses pengiriman</p>
+            </div>
           </Col>
-          <Col className='text-center py-3 px-2'>
+          <Col className='single-feature'>
+          <div className='single-feature-container'>
             <img src={support} alt='support-icon' className='icon'/>
             <h5 className='fw-bold'>Layanan Pelanggan</h5>
             <p>Customer service kami siap melayani pertanyaan Anda</p>
+          </div>
           </Col>
         </Row>
       </Container>

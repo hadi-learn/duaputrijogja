@@ -1,25 +1,46 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Carousel, Container } from 'react-bootstrap'
 import products from '../products/products'
 
 const Hero = () => {
 
-  const images = products
-  
+  const [imageSource, setImageSource] = useState('srcHeroPortrait')
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 992) {
+        setImageSource('srcHeroLandscape');
+      } else {
+        setImageSource('srcHeroPortrait');
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [imageSource]);
+
+  const images = products.map((product) => {
+    const {
+      id, srcHeroPortrait, srcHeroLandscape, srcLatest, alt, heading, subheading
+    } = product
+    const imageSrc = imageSource === 'srcHeroLandscape' ? srcHeroLandscape : srcHeroPortrait
+    return { id, imageSrc, srcLatest, alt, heading, subheading }
+  })
+
   return (
     <section className='hero'>
       <Container fluid>
         <Carousel fade>
-          {images.map((image) => (
-            <Carousel.Item key={image.id}>
+          {images.map((images) => (
+            <Carousel.Item key={images.id}>
             <img
               className="d-block w-100"
-              src={image.srcHero}
-              alt={image.alt}
+              src={images.imageSrc}
+              alt={images.alt}
             />
             <Carousel.Caption>
-              <h3>{image.heading}</h3>
-              <p>{image.subheading}</p>
+              <h3>{images.heading}</h3>
+              <p>{images.subheading}</p>
             </Carousel.Caption>
           </Carousel.Item>
           ))}
