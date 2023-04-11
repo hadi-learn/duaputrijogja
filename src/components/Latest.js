@@ -18,7 +18,7 @@ const Latest = () => {
         </Row>
         <Row className='row-cols-lg-3'>
           {products.map(product => (
-            <Col sm={12} md={6} lg={4}>
+            <Col key={product.id} sm={12} md={6} lg={4}>
           <div className='single-product'>
             <div className="image-container">
               <a href={`#product${product.id}`}>

@@ -8,7 +8,7 @@ const Products = () => {
       <Container fluid>
         <Row>
           <Col className='text-center my-5'>
-            <h2>Produk Kami</h2>
+            {/* <h2>Produk Kami</h2> */}
             <div>
               <video src={video1} controls>Produk Kami</video>
             </div>

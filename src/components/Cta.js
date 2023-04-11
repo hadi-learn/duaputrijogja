@@ -2,28 +2,33 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
 const Cta = () => {
-  const phoneNumber = [
-    // process.env.REACT_APP_HP_ARIFIN,
-    // process.env.REACT_APP_HP_TYAS,
-    // process.env.REACT_APP_HP_HADI,
-    '+6281804095747',
-    '+628175453045',
-    '+6281908198538'
+  const customerService = [
+    {
+      name: 'Arifin',
+      phone: '+6281804095747',
+      message: 'Halo Kak Arifin Dua Putri Jogja'
+    },
+    {
+      name: 'Tyas',
+      phone: '+628175453045',
+      message: 'Halo Kak Tyas Dua Putri Jogja'
+    },
+    {
+      name: 'CS-3',
+      phone: '+6281804095747',
+      message: 'Halo Kak CS-3 Dua Putri Jogja'
+    },
+    {
+      name: 'CS-4',
+      phone: '+628175453045',
+      message: 'Halo Kak CS-4 Dua Putri Jogja'
+    },
+    {
+      name: 'CS-5',
+      phone: '+628175453045',
+      message: 'Halo Kak CS-5 Dua Putri Jogja'
+    }
   ]
-  const message = 'Hallo Dua Putri Jogja' // replace with the message you want to send
-  
-  const handleWhatsAppClick1 = (e) => {
-    e.preventDefault();
-    window.open(`https://api.whatsapp.com/send?phone=${phoneNumber[0]}&text=${message}`, '_blank');
-  }
-  const handleWhatsAppClick2 = (e) => {
-    e.preventDefault();
-    window.open(`https://api.whatsapp.com/send?phone=${phoneNumber[1]}&text=${message}`, '_blank');
-  }
-  const handleWhatsAppClick3 = (e) => {
-    e.preventDefault();
-    window.open(`https://api.whatsapp.com/send?phone=${phoneNumber[1]}&text=${message}`, '_blank');
-  }
 
   return (
     <section className='cta'>
@@ -34,8 +39,21 @@ const Cta = () => {
           <p>Untuk informasi lebih lanjut silakan hubungi CS kami</p>
         </Col>
       </Row>
-      <Row className='row-cols-md-3 row-cols-1'>
-        <Col onClick={handleWhatsAppClick1} className='cs-container text-center'>
+      <Row className='cs-row'>
+        {customerService.map((cs, index) => (
+          <div
+            className='cs-container text-center'
+            key={index}
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(`https://api.whatsapp.com/send?phone=${cs.phone}&text=${cs.message}`, '_blank');
+            }} 
+          >
+          <i className="fa-brands fa-whatsapp wa-button"></i>
+          <p><span>{cs.name}</span>{`: ${cs.phone}`}</p>
+        </div>
+        ))}
+        {/* <Col onClick={handleWhatsAppClick1} className='cs-container text-center'>
           <i class="fa-brands fa-whatsapp wa-button"></i>
           <p><span>Arifin</span>-081804095747</p>
         </Col>
@@ -46,7 +64,7 @@ const Cta = () => {
         <Col onClick={handleWhatsAppClick3} className='cs-container text-center'>
           <i class="fa-brands fa-whatsapp wa-button"></i>
           <p><span>Hadi</span>-081908198538</p>
-        </Col>
+        </Col> */}
       </Row>
     </Container>
     </section>

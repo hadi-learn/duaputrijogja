@@ -28,7 +28,7 @@ const Hero = () => {
   })
 
   return (
-    <section className='hero'>
+    <section className='hero' id='home'>
       <Container fluid>
         <Carousel fade>
           {images.map((images) => (

@@ -1,6 +1,7 @@
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Latest from './components/Latest'
+import Location from './components/Location'
 import Cta from './components/Cta'
 import Features from './components/Features'
 import About from './components/About'
@@ -12,10 +13,11 @@ function App() {
     <div className="App">
       <Hero />
       <Navbar />
+      <Products />
       <About />
       <Latest />
       <Features />
-      <Products />
+      <Location />
       <Cta />
       <Footer />
     </div>

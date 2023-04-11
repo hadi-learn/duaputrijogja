@@ -29,22 +29,22 @@ function Footer() {
             <ul className='p-0'>
               <li>
                 <a href="https://www.facebook.com/">
-                <i class="fa-brands fa-facebook-f"></i>
+                <i className="fa-brands fa-facebook-f"></i>
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/">
-                <i class="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
                 </a>
               </li>
               <li>
                 <a href="https://www.youtube.com/">
-                <i class="fa-brands fa-youtube"></i>
+                <i className="fa-brands fa-youtube"></i>
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com/">
-                <i class="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-twitter"></i>
                 </a>
               </li>
             </ul>

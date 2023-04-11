@@ -16,7 +16,7 @@ function MyNavbar() {
               <Nav className="ms-auto text-center">
               <NavDropdown title="Produk" id="collasible-nav-dropdown">
                   {products.map(product => (
-                    <NavDropdown.Item href={`#product/${product.id}`}>{product.heading}</NavDropdown.Item>
+                    <NavDropdown.Item key={product.id} href={`#product/${product.id}`}>{product.heading}</NavDropdown.Item>
                   ))}
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#product/3.4">
