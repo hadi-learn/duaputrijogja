@@ -4,12 +4,12 @@ import logo from '../assets/images/background/dua putri logo.png'
 
 function MyNavbar() {
   return (
-    <div className='sticky-top'>
+    <section className='sticky-top'>
       <Container fluid>
         <Navbar collapseOnSelect expand="md" variant="dark">
           <Container>
             <Navbar.Brand href="#home">
-              <span><img height='30px' width='30px' src={logo} alt='dua putri jogja-logo'></img></span>Dua Putri Jogja
+              <span><img height='30px' width='30px' src={logo} alt='dua putri jogja-logo'></img></span><span className='brand-name'>Dua Putri Jogja</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -23,16 +23,15 @@ function MyNavbar() {
                     Produk Lainnya
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#layanan">Layanan</Nav.Link>
-                <Nav.Link href="#produkterbaru">Produk Terbaru</Nav.Link>
-                <Nav.Link href="#hubungikami">Hubungi Kami</Nav.Link>
-                
+                <Nav.Link href="#about">Tentang Kami</Nav.Link>
+                <Nav.Link href="#latest">Produk Terbaru</Nav.Link>
+                <Nav.Link href="#contact">Hubungi Kami</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
       </Container>
-    </div>
+    </section>
   );
 }
 

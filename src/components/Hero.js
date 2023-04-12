@@ -4,7 +4,7 @@ import products from '../products/products'
 
 const Hero = () => {
 
-  const [imageSource, setImageSource] = useState('srcHeroPortrait')
+  const [imageSource, setImageSource] = useState(window.innerWidth > 992 ? 'srcHeroLandscape': 'srcHeroPortrait')
 
   useEffect(() => {
     const handleResize = () => {
@@ -17,7 +17,7 @@ const Hero = () => {
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, [imageSource]);
+  }, []);
 
   const images = products.map((product) => {
     const {

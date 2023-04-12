@@ -6,20 +6,19 @@ import { Container, Row, Col, Image } from 'react-bootstrap'
 
 const Latest = () => {
   return (
-    <section className='latest'>
+    <section className='latest' id='latest'>
       <Container fluid>
         <Row>
           <Col className='text-center'>
             <div className='new-product-title'>
-              <h2 className='fw-bold'>Produk Terbaru</h2>
-              <p>Berbagai macam produk sehat dan higienis</p>
+              <h2>Produk Terbaru</h2>
             </div>
           </Col>
         </Row>
         <Row className='row-cols-lg-3'>
           {products.map(product => (
             <Col key={product.id} sm={12} md={6} lg={4}>
-          <div className='single-product'>
+            <div className='single-product'>
             <div className="image-container">
               <a href={`#product${product.id}`}>
                 <Image src={product.srcLatest} fluid style={{ width: '100%', height: 'auto' }}/>

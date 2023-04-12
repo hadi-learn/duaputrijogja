@@ -31,12 +31,12 @@ const Cta = () => {
   ]
 
   return (
-    <section className='cta'>
+    <section className='cta' id='contact'>
     <Container fluid>
       <Row className='mb-4'>
         <Col className='text-center'>
           <h2 className='fw-bold'>Hubungi Kami</h2>
-          <p>Untuk informasi lebih lanjut silakan hubungi CS kami</p>
+          <p>Untuk informasi lebih lanjut CS kami siap melayani Anda</p>
         </Col>
       </Row>
       <Row className='cs-row'>
