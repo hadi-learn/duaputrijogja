@@ -7,12 +7,19 @@ import Features from './components/Features'
 import About from './components/About'
 import Products from './components/Products'
 import Footer from './components/Footer'
+import { useState } from 'react'
 
 function App() {
+
+  const [heroHeight, setHeroHeight] = useState(0)
+  const handleScroll = height => {
+    setHeroHeight(height)
+  }
+
   return (
     <div className="App">
-      <Hero />
-      <Navbar />
+      <Hero handleScroll={handleScroll}/>
+      <Navbar heroHeight={heroHeight}/>
       <Products />
       <About />
       <Latest />

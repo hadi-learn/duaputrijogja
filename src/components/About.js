@@ -23,6 +23,9 @@ const About = () => {
               <p>Berkomitmen untuk selalu berusaha agar produk yang Anda terima dalam kualitas yang baik</p>
               <img src={emoji} alt='emoji-icon'></img>
             </div>
+            <div>
+              <a href='#about-us'><p>Selengkapnya...</p></a>
+            </div>
           </Col>
         </Row>
       </Container>

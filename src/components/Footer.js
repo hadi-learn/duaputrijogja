@@ -5,16 +5,15 @@ function Footer() {
     <footer className="footer text-white">
       <Container>
         <Row>
-          <Col xs={12} md={4} className='text-center'>
+          <Col xs={12} md={4} className='footer-about text-center'>
             <h4>Dua Putri Jogja</h4>
             <ul className="list-unstyled">
               <li>Tentang</li>
-              <li>Jobs</li>
-              <li>Press</li>
+              <li>Kemitraan</li>
             </ul>
           </Col>
-          <Col xs={12} md={4} className='text-center'>
-            <h4>Products</h4>
+          <Col xs={12} md={4} className='footer-products text-center'>
+            <h4>Produk</h4>
             <ul className="list-unstyled">
               <li>Product 1</li>
               <li>Product 2</li>
@@ -26,7 +25,7 @@ function Footer() {
           </Col>
           <Col xs={12} md={4} className='footer-social-icons text-center'>
             <h4>Follow Us</h4>
-            <ul className='p-0'>
+            <ul>
               <li>
                 <a href="https://www.facebook.com/">
                 <i className="fa-brands fa-facebook-f"></i>

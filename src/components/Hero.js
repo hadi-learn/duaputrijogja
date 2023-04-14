@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef, useLayoutEffect, forwardRef } from 'react'
 import { Carousel, Container } from 'react-bootstrap'
 import products from '../products/products'
 
-const Hero = () => {
+const Hero = ({ handleScroll }) => {
+
+  const heroRef = useRef(null)
 
   const [imageSource, setImageSource] = useState(window.innerWidth > 992 ? 'srcHeroLandscape': 'srcHeroPortrait')
 
@@ -19,6 +21,10 @@ const Hero = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  useLayoutEffect(() => {
+    handleScroll(heroRef.current.offsetHeight);
+  }, [handleScroll])
+
   const images = products.map((product) => {
     const {
       id, srcHeroPortrait, srcHeroLandscape, srcLatest, alt, heading, subheading
@@ -28,7 +34,7 @@ const Hero = () => {
   })
 
   return (
-    <section className='hero' id='home'>
+    <section ref={heroRef} className='hero' id='home'>
       <Container fluid>
         <Carousel fade>
           {images.map((images) => (
