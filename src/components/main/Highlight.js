@@ -1,10 +1,9 @@
-import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
-import video1 from '../assets/videos/video1.mov'
+import video1 from '../../assets/videos/video1.mov'
 
-const Products = () => {
+const Highlight = () => {
   return (
-    <section className='products'>
+    <section className='highlights'>
       <Container fluid>
         <Row>
           <Col className='text-center my-5'>
@@ -19,4 +18,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default Highlight

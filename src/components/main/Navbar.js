@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
-import products from '../products/products'
-import logo from '../assets/images/background/dua putri logo.png'
-import brandName from '../assets/images/background/Dua Putri Jogja Brand-transparent-white.svg'
+import products from '../../products/products'
+import logo from '../../assets/images/background/dua putri logo.png'
+import brandName from '../../assets/images/background/Dua Putri Jogja Brand-transparent-white.svg'
 
 function MyNavbar({ heroHeight }) {
 
@@ -36,7 +36,7 @@ function MyNavbar({ heroHeight }) {
       <Container fluid>
         <Navbar collapseOnSelect expand="md" variant="dark" className={activeClass}>
           <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
               <span><img className='logo' height='30px' width='30px' src={logo} alt='dua putri jogja-logo'></img></span><img height='40px' width='200px' src={brandName} alt='dua putri jogja brand name'></img>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -44,14 +44,14 @@ function MyNavbar({ heroHeight }) {
               <Nav className="ms-auto text-center">
               <NavDropdown title="Produk" id="collasible-nav-dropdown">
                   {products.map(product => (
-                    <NavDropdown.Item key={product.id} href={`#product/${product.id}`}>{product.heading}</NavDropdown.Item>
+                    <NavDropdown.Item key={product.id} href={`/produk/${product.id}`}>{product.heading}</NavDropdown.Item>
                   ))}
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#product/3.4">
                     Produk Lainnya
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#about">Tentang Kami</Nav.Link>
+                <Nav.Link href="/tentang">Tentang Kami</Nav.Link>
                 <Nav.Link href="#latest">Produk Terbaru</Nav.Link>
                 <Nav.Link href="#contact">Hubungi Kami</Nav.Link>
               </Nav>

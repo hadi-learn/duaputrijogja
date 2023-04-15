@@ -1,5 +1,5 @@
 import React from 'react'
-import products from '../products/products'
+import products from '../../products/products'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 // import { ReactComponent as SVG1 } from '../assets/images/background/01. Blob Filled (1).svg'
 // import { ReactComponent as SVG2 } from '../assets/images/background/02. Blob Filled (2).svg'

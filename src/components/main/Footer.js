@@ -5,25 +5,15 @@ function Footer() {
     <footer className="footer text-white">
       <Container>
         <Row>
-          <Col xs={12} md={4} className='footer-about text-center'>
+          <Col xs={12} md={6} className='footer-about text-center'>
             <h4>Dua Putri Jogja</h4>
             <ul className="list-unstyled">
-              <li>Tentang</li>
-              <li>Kemitraan</li>
+              <li><a href='/tentang'>Tentang</a></li>
+              <li><a href='/produk'>Produk</a></li>
+              <li><a href='/kemitraan'>Kemitraan</a></li>
             </ul>
           </Col>
-          <Col xs={12} md={4} className='footer-products text-center'>
-            <h4>Produk</h4>
-            <ul className="list-unstyled">
-              <li>Product 1</li>
-              <li>Product 2</li>
-              <li>Product 3</li>
-              <li>Product 4</li>
-              <li>Product 5</li>
-              <li>Product 6</li>
-            </ul>
-          </Col>
-          <Col xs={12} md={4} className='footer-social-icons text-center'>
+          <Col xs={12} md={6} className='footer-social-icons text-center'>
             <h4>Follow Us</h4>
             <ul>
               <li>

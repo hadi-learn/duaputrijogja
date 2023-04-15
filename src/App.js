@@ -1,33 +1,25 @@
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import Latest from './components/Latest'
-import Location from './components/Location'
-import Cta from './components/Cta'
-import Features from './components/Features'
-import About from './components/About'
-import Products from './components/Products'
-import Footer from './components/Footer'
-import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import ProductsLayout from './components/ProductsLayout'
+import Main from "./components/Main"
+import AboutUs from './components/tentang/AboutUs'
+import Products from './components/produk/Products'
+import Partnership from './components/kemitraan/Partnership'
+import SingleProduct from './components/produk/SingleProduct'
 
 function App() {
-
-  const [heroHeight, setHeroHeight] = useState(0)
-  const handleScroll = height => {
-    setHeroHeight(height)
-  }
-
   return (
-    <div className="App">
-      <Hero handleScroll={handleScroll}/>
-      <Navbar heroHeight={heroHeight}/>
-      <Products />
-      <About />
-      <Latest />
-      <Features />
-      <Location />
-      <Cta />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Main />} />
+        <Route path='tentang' element={<AboutUs />} />
+        <Route path='kemitraan' element={<Partnership />} />
+        <Route path='produk' element={<ProductsLayout />} >
+          <Route index element={<Products />} />
+          <Route path=':id' element={<SingleProduct />} />
+        </Route>
+      </Route>
+    </Routes>
   )
 }
 

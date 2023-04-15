@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef, useLayoutEffect, forwardRef } from 'react'
+import React, { useState, useEffect, useRef, useLayoutEffect } from 'react'
 import { Carousel, Container } from 'react-bootstrap'
-import products from '../products/products'
+import products from '../../products/products'
 
 const Hero = ({ handleScroll }) => {
 
@@ -45,7 +45,7 @@ const Hero = ({ handleScroll }) => {
               alt={images.alt}
             />
             <Carousel.Caption>
-              <h3>{images.heading}</h3>
+              <h1>{images.heading}</h1>
               <p>{images.subheading}</p>
             </Carousel.Caption>
           </Carousel.Item>

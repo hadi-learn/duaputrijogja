@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
-import transport from '../assets/images/background/23-transport.svg'
-import support from '../assets/images/background/26-support.svg'
-import payment from '../assets/images/background/9-payment.svg'
+import transport from '../../assets/images/background/23-transport.svg'
+import support from '../../assets/images/background/26-support.svg'
+import payment from '../../assets/images/background/9-payment.svg'
 
 const Features = () => {
   return (

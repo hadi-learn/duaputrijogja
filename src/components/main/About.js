@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Col, Row, Image } from 'react-bootstrap'
-import collage from '../assets/images/background/dua putri jogja collage.png'
-import emoji from '../assets/images/background/shield-check.svg'
+import collage from '../../assets/images/background/dua putri jogja collage.png'
+import emoji from '../../assets/images/background/shield-check.svg'
 
 const About = () => {
   return (
@@ -24,7 +24,7 @@ const About = () => {
               <img src={emoji} alt='emoji-icon'></img>
             </div>
             <div>
-              <a href='#about-us'><p>Selengkapnya...</p></a>
+              <a href='/tentang'><p>Selengkapnya...</p></a>
             </div>
           </Col>
         </Row>
