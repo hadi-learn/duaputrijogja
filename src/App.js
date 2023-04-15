@@ -12,8 +12,8 @@ function App() {
     <Routes>
       <Route path='/' element={<Layout />}>
         <Route index element={<Main />} />
-        <Route path='tentang' element={<AboutUs />} />
         <Route path='kemitraan' element={<Partnership />} />
+        <Route path='tentang' element={<AboutUs />} />
         <Route path='produk' element={<ProductsLayout />} >
           <Route index element={<Products />} />
           <Route path=':id' element={<SingleProduct />} />
