@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "homepage": "https://duaputrijogja.syukri-hadi.com/",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.18.1",
