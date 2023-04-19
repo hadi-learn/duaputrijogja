@@ -24,9 +24,9 @@ const Cta = () => {
       message: 'Halo Kak CS-4 Dua Putri Jogja'
     },
     {
-      name: 'CS-5',
-      phone: '+628175453045',
-      message: 'Halo Kak CS-5 Dua Putri Jogja'
+      name: 'Acong',
+      phone: '+6281337646100',
+      message: 'Halo Kak Acong Dua Putri Jogja'
     }
   ]
 
